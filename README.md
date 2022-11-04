@@ -1,7 +1,7 @@
 "# xphom_rule" 
-Luật đánh phỏm
+# Luật đánh phỏm
 
-1.	Luật cơ bản phỏm
+## 1.	Luật cơ bản phỏm
 Phỏm: Là bộ gồm 3 quân bài trở lên có cùng chất và số liên tiếp nhau hoặc bộ 3 quân bài khác chất nhưng cùng số.
 Bài rác: Những lá bài lẻ không thuộc Phỏm nào.
 Nọc: Các lá bài còn dư sau khi chia cho người chơi.
@@ -12,11 +12,12 @@ Móm: Kết thúc ván, người chơi không hạ được Phỏm nào thì g�
 Tái: Sau khi hạ bài, nếu trong bàn có người ăn, các quân bài đã đánh ra sẽ được chuyển chỗ và bạn được phép đánh thêm một lượt.
 Gửi: Ở lượt cuối, nếu bài rác của bạn có thể kết nạp vào Phỏm của những người chơi đã hạ bài thì bạn có thể Gửi lá bài rác đó đi. Lá bài được gửi đi sẽ không bị tính điểm khi kết thúc ván.
 
-2.	Thuật toán chơi
+## 2.	Thuật toán chơi
 -	Client gửi info tất cả các lá bài đã lộ lên cho server (10 lá bài của mình và các cây đánh của các nhà khác)
 -	Xét ưu tiên lá bài trong bài mình là lá què to nhất, xác suất bị ăn thấp nhất thì đánh trước (nếu trường hợp có >= 2 lá 100% ko bị ăn thì để lại lá bé hơn làm chốt, còn nếu chỉ có 1 lá thì sẽ để dành đánh chốt).
- 
-Sơ đồ vị trí ngồi và hướng đánh bài
+
+## Sơ đồ vị trí ngồi và hướng đánh bài  
+![App Screenshot](./diagram.png)  
 
 -	Cách tính xác suất lá bị ăn như sau:
 •	Vd lá 10 sẽ có 7 trường hợp bị ăn như sau: 10rô 10cơ 10bích, 10rô 10cơ 10tép, 10cơ 10bích 10tép, 10 10 10 10, 8 9 10, 9 10 J, 10 J Q.
